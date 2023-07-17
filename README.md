@@ -1,6 +1,6 @@
 # decktuner_tip_comparison
-A simple tool for decktuner members to compare their tips through various platforms.
-
+ A simple tool for decktuner members to insert recent tips and compare how much they'd make through various platforms. 
+ 
 # What to do
 1. Input the number of recent tip amounts you want to input.
 2. Input each tip's USD dollar amounts one by one without any special characters. This is a very basic program with next to no error-catching. 
