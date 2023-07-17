@@ -3,8 +3,7 @@ import json
 import datetime
 import re
 
-auth = "NzE0ODI2Njk1MTQzNjY5NzY.GCsz8m.hSRy05ESHGMtCEv-lnsVAlFBI_hn7_5b5ypU5k"
-decktuner = "845023235422421056"
+
 unclaimed_ids = []
 user_left_ids = []
 workshop_list = []
