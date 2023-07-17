@@ -3,8 +3,9 @@ A simple tool for decktuner members to compare their tips through various platfo
 
 # What to do
 1. Input the number of recent tip amounts you want to input.
-2. Input each tip's USD dollar amounts one by one without any special characters.
-3. Profit
+2. Input each tip's USD dollar amounts one by one without any special characters. This is a very basic program with next to no error-catching. 
+3. ????
+4. Profit
 
 # About the Results
 1. BuyMeACoffee results are assuming you have "cover credit card fees" unchecked and are posting no donations.
