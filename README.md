@@ -11,5 +11,5 @@
 1. BuyMeACoffee results are assuming you have "cover credit card fees" unchecked and are posting no donations. BMAC only allows stripe (not paypal). 
 2. Ko-Fi (Stripe) also assumes no donations.
 3. Ko-Fi (PayPal) is assuming that the formula posted on PayPal's website is accurate, but I am regularly charged more than that for my donations. I wish PayPal was more transparent as to why. If anyone knows why, please tell me.
-4. Remember that on Ko-Fi, unless you disable stripe or paypal, you have no control over what % of users donate via which platform. Ko-Fi average is a simple average not intended to account for pilots' donating patterns. 
+4. Ko-Fi (Average) averages Ko-Fi (Stripe) and Ko-Fi (PayPal). This is because, unless you disable Stripe or PayPal, you have no control over what % of users donate via which platform. Ko-Fi (Average) is a simple average not intended to account for pilots' donating patterns, but might provide a sample of what donations could look like assuming you have PayPal AND Stripe enabled. 
 5. I'd be happy to add more platforms / numbers if tuners are interested.
