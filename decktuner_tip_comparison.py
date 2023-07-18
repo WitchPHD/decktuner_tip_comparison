@@ -4,16 +4,16 @@ tips = []
 
 class TIP:
     def __init__(self, dollars):
-        self.cents = float(dollars * 100)
+        self.amount = dollars
         #get the BuyMeACoffee Tip
-        self.BMAC_FEE = self.cents * 0.05
-        self.BMAC_TIP = self.cents - self.BMAC_FEE
+        self.BMAC_FEE = dollars * 0.05
+        self.BMAC_TIP = dollars - self.BMAC_FEE
         #Get the Ko-Fi stripe TIP
-        self.KF_STRIPE_FEE = (self.cents * 0.029) + 30
-        self.KF_STRIPE_TIP = self.cents - self.KF_STRIPE_FEE
+        self.KF_STRIPE_FEE = (dollars * 0.029) + 0.30
+        self.KF_STRIPE_TIP = dollars - self.KF_STRIPE_FEE
         #Get the Paypal stripe TIP
-        self.KF_PAYPAL_FEE = (self.cents * 0.030) + 45
-        self.KF_PAYPAL_TIP = self.cents - self.KF_PAYPAL_FEE
+        self.KF_PAYPAL_FEE = (dollars * 0.030) + 0.45
+        self.KF_PAYPAL_TIP = dollars - self.KF_PAYPAL_FEE
 
 print ('Please enter all tips in $USD$ dollar amounts without special characters.\n')
 print ('When you are finished entering tips, type \'done\' and hit enter.\n')
@@ -36,11 +36,10 @@ KF_PAYPAL_TIP_TOT = 0
 BMAC_FEE_TOT = 0
 BMAC_TIP_TOT = 0
 
-
 print ('\n')
 for t in tips:
     #print each tip and add them to counters
-    print("{:.2f}$ tip costs: {:.0f}¢ BMAC, {:.0f}¢ Ko-Fi (Stripe), and {:.0f}¢ Ko-Fi (Paypal) ".format(t.cents/100, t.BMAC_FEE, t.KF_STRIPE_FEE, t.KF_PAYPAL_FEE))
+    print("{:.2f}$ tip costs: {:.2f}$ BMAC, {:.2f}$ Ko-Fi (Stripe), and {:.2f}$ Ko-Fi (Paypal) ".format(t.amount, t.BMAC_FEE, t.KF_STRIPE_FEE, t.KF_PAYPAL_FEE))
     KF_STRIPE_FEE_TOT = KF_STRIPE_FEE_TOT + t.KF_STRIPE_FEE
     KF_STRIPE_TIP_TOT = KF_STRIPE_TIP_TOT + t.KF_STRIPE_TIP
     KF_PAYPAL_FEE_TOT = KF_PAYPAL_FEE_TOT + t.KF_PAYPAL_FEE
@@ -48,8 +47,8 @@ for t in tips:
     BMAC_FEE_TOT = BMAC_FEE_TOT + t.BMAC_FEE
     BMAC_TIP_TOT = BMAC_TIP_TOT + t.BMAC_TIP
 
-print ('\nRESULTS:')
-print ('\nWith BuyMeACoffee: you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(BMAC_FEE_TOT/100, BMAC_TIP_TOT/100))
-print ('\nWith Ko-Fi (Stripe): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(KF_STRIPE_FEE_TOT/100, KF_STRIPE_TIP_TOT/100))
-print ('\nWith Ko-Fi (Paypal): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(KF_PAYPAL_FEE_TOT/100, KF_PAYPAL_TIP_TOT/100))
-print ('\nWith Ko-Fi (Average): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format((KF_PAYPAL_FEE_TOT+KF_STRIPE_FEE_TOT)/2/100, (KF_PAYPAL_TIP_TOT+KF_STRIPE_TIP_TOT)/2/100))
+print ('\nRESULTS FOR {:} TIPS:\n'.format(n-1))
+print ('With BuyMeACoffee: you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(BMAC_FEE_TOT, BMAC_TIP_TOT))
+print ('With Ko-Fi (Stripe): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(KF_STRIPE_FEE_TOT, KF_STRIPE_TIP_TOT))
+print ('With Ko-Fi (Paypal): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(KF_PAYPAL_FEE_TOT, KF_PAYPAL_TIP_TOT))
+print ('With Ko-Fi (Average): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format((KF_PAYPAL_FEE_TOT+KF_STRIPE_FEE_TOT)/2, (KF_PAYPAL_TIP_TOT+KF_STRIPE_TIP_TOT)/2))
