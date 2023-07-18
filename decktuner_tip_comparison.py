@@ -15,16 +15,18 @@ class TIP:
         self.KF_PAYPAL_FEE = (self.cents * 0.030) + 45
         self.KF_PAYPAL_TIP = self.cents - self.KF_PAYPAL_FEE
 
+print ('Please enter all tips in $USD$ dollar amounts without special characters.\n')
+print ('When you are finished entering tips, type \'done\' and hit enter.\n')
 
-        
-
-num_tip = input('How many tips will you enter? \n')
-print ('Please enter all tips in $USD$ dollar amounts.\n')
-
-#ask for all the 
-for n in range(int(num_tip)):
-    x = float(input('Enter tip {:}: '.format(n+1)))
-    tips.append(TIP(x))
+#ask for all the
+n = 1
+while True:
+    try:
+        x = float(input('Enter tip {:}: '.format(n)))
+        tips.append(TIP(x))
+        n = n + 1
+    except:
+        break
 
 #generate some counters
 KF_STRIPE_FEE_TOT = 0
