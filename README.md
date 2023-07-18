@@ -2,8 +2,8 @@
  A simple tool for decktuner members to insert recent tips and compare how much they'd make through various platforms. 
  
 # What to do
-1. Run the program ( either on your own python terminal, or here: https://www.online-python.com/ ). Input the number of recent tip amounts you want to input.
-2. Input each tip's USD dollar amounts one by one. Do not use any special characters ( This is a very basic program with next to no error-catching ). 
+1. Run the program ( either on your own python terminal, or here: https://www.online-python.com/ ). 
+2. Input each tip's USD dollar amounts one by one. Hit enter after each one. When you're done inputting, type 'done' and hit enter. Using non-numerical characters (such as $) may terminate the program early.
 3. ????
 4. Profit
 
