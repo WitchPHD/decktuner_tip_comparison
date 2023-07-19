@@ -9,7 +9,7 @@
 
 # About the Results
 1. BuyMeACoffee results are assuming you have "cover credit card fees" unchecked and you are not donating any % to charity. Since the pilot/donator is paying the credit card fee, they are also paying the 1.5% international fee if applicable. BMAC only supports Stripe (not PayPal). 
-2. Ko-Fi (Stripe) also assumes you are not donating any % to charity. For international donations, you will end up paying an extra 1.5% international fee on credit card fees.
+2. Ko-Fi (Stripe) also assumes you are not donating any % to charity. 
 4. Ko-Fi (PayPal) is based on the standard fee for receiving donations in United States Dollars (2.89% + 49¢). PayPal pricing is actually really complicated, and you may end up spending a decent amount more based on location.
 5. Ko-Fi (Stripe - International) is the same as "Ko-Fi (Stripe)" but with the international fee. Since you are paying credit card fees, you will have to pay it if the donator is international.
 6. Ko-Fi (PayPal - International) is the same as "Ko-Fi (PayPal)" but with the international fee. Since you are paying credit card fees, you will have to pay it if the donator is international.
