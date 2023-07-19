@@ -65,7 +65,7 @@ for t in tips:
 print ('\nRESULTS FOR {:} TIPS:\n'.format(n-1))
 print ('BuyMeACoffee:')
 print ('    BuyMeACoffee: you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(BMAC_FEE_TOT, BMAC_TIP_TOT))
-print ('    (w/ "cover credit card fees" unchecked') 
+print ('    (w/ "cover credit card fees" unchecked)') 
 print ('\nKo-Fi:')
 print ('    Ko-Fi (Stripe): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(KF_STRIPE_FEE_TOT, KF_STRIPE_TIP_TOT))
 print ('    Ko-Fi (Paypal): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(KF_PAYPAL_FEE_TOT, KF_PAYPAL_TIP_TOT))
