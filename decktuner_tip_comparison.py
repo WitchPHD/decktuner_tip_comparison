@@ -61,6 +61,7 @@ for t in tips:
     BMAC_FEE_TOT = BMAC_FEE_TOT + t.BMAC_FEE
     BMAC_TIP_TOT = BMAC_TIP_TOT + t.BMAC_TIP
 
+#print and format the results
 print ('\nRESULTS FOR {:} TIPS:\n'.format(n-1))
 print ('BuyMeACoffee:')
 print ('    BuyMeACoffee: you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(BMAC_FEE_TOT, BMAC_TIP_TOT))
