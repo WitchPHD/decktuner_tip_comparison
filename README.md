@@ -8,8 +8,10 @@
 4. Profit
 
 # About the Results
-1. BuyMeACoffee results are assuming you have "cover credit card fees" unchecked. Since the pilot/donator is paying the credit card fee, they are also paying the 1.5% international fee. BMAC only allows Stripe (not PayPal). 
-2. Ko-Fi (Stripe) also assumes no donations. For international donations, you will end up paying an extra 1.5% international fee on credit card fees, and I have not accounted for this.
-3. Ko-Fi (PayPal) is based on the standard fee for receiving donations in United States Dollars (2.89% + 49¢). PayPal pricing is actually really complicated, and you may end up spending a decent amount more based on location... and ALSO paying 1.5% international fee.
-4. Ko-Fi (Average) averages Ko-Fi (Stripe) and Ko-Fi (PayPal). This is because, unless you disable Stripe or PayPal, you have no control over what % of users donate via which platform. Ko-Fi (Average) is a simple average not intended to account for pilots' donating patterns, but might provide a sample of what donations could look like assuming you have PayPal AND Stripe enabled. 
-5. I'd be happy to add more platforms/numbers if tuners are interested.
+1. BuyMeACoffee results are assuming you have "cover credit card fees" unchecked and you are not donating any % to charity. Since the pilot/donator is paying the credit card fee, they are also paying the 1.5% international fee if applicable. BMAC only supports Stripe (not PayPal). 
+2. Ko-Fi (Stripe) also assumes you are not donating any % to charity. For international donations, you will end up paying an extra 1.5% international fee on credit card fees.
+4. Ko-Fi (PayPal) is based on the standard fee for receiving donations in United States Dollars (2.89% + 49¢). PayPal pricing is actually really complicated, and you may end up spending a decent amount more based on location.
+5. Ko-Fi (Stripe - International) is the same as "Ko-Fi (Stripe)" but with the international fee. Since you are paying credit card fees, you will have to pay it if the donator is international.
+6. Ko-Fi (PayPal - International) is the same as "Ko-Fi (PayPal)" but with the international fee. Since you are paying credit card fees, you will have to pay it if the donator is international.
+7. Ko-Fi (Average) averages the fees/tips from Stripe and PayPal both internationally and nationally. This is because, unless you disable Stripe or PayPal, you have no control over what % of users donate via which platform... and also, you have no control over what % of users is donating from an international location. Ko-Fi (Average) is a simple average not intended to account for pilots' donating patterns but might provide a sample of what donations could look like assuming you have PayPal AND Stripe enabled. 
+8. I'd be happy to add more platforms/numbers if tuners are interested/send me links to said platforms.
