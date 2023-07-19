@@ -52,3 +52,4 @@ print ('BuyMeACoffee: you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(BMAC_F
 print ('Ko-Fi (Stripe): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(KF_STRIPE_FEE_TOT, KF_STRIPE_TIP_TOT))
 print ('Ko-Fi (Paypal): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(KF_PAYPAL_FEE_TOT, KF_PAYPAL_TIP_TOT))
 print ('Ko-Fi (Average): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format((KF_PAYPAL_FEE_TOT+KF_STRIPE_FEE_TOT)/2, (KF_PAYPAL_TIP_TOT+KF_STRIPE_TIP_TOT)/2))
+input('Hit ENTER to terminate the program.')
