@@ -45,6 +45,7 @@ KF_PAYPAL_FEE_TOT = 0
 KF_PAYPAL_TIP_TOT = 0
 BMAC_FEE_TOT = 0
 BMAC_TIP_TOT = 0
+TIP_TOT = 0
 
 print ('\n')
 for t in tips:
@@ -60,9 +61,10 @@ for t in tips:
     KF_PAYPAL_TIP_TOT = KF_PAYPAL_TIP_TOT + t.KF_PAYPAL_TIP
     BMAC_FEE_TOT = BMAC_FEE_TOT + t.BMAC_FEE
     BMAC_TIP_TOT = BMAC_TIP_TOT + t.BMAC_TIP
+    TIP_TOT = TIP_TOT + t.amount
 
 #print and format the results
-print ('\nRESULTS FOR {:} TIPS:'.format(n-1))
+print ('\nRESULTS FOR {:} TIPS TOTALING {:.2f}$:'.format(n-1, TIP_TOT))
 print ('\n    BuyMeACoffee:')
 print ('        BuyMeACoffee: you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(BMAC_FEE_TOT, BMAC_TIP_TOT))
 print ('        (w/ "cover credit card fees" unchecked)') 
@@ -72,5 +74,5 @@ print ('        Ko-Fi (Paypal): you pay {:.2f}$ in fees and pocket {:.2f}$.'.for
 print ('        Ko-Fi (Stripe - International): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(KF_STRIPEIN_FEE_TOT, KF_STRIPEIN_TIP_TOT))
 print ('        Ko-Fi (Paypal - International): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format(KF_PAYPALIN_FEE_TOT, KF_PAYPALIN_TIP_TOT))
 print ('        Ko-Fi (Average): you pay {:.2f}$ in fees and pocket {:.2f}$.'.format((KF_PAYPAL_FEE_TOT+KF_STRIPE_FEE_TOT+KF_PAYPALIN_FEE_TOT+KF_STRIPEIN_FEE_TOT)/4, (KF_PAYPAL_TIP_TOT+KF_STRIPE_TIP_TOT+KF_PAYPALIN_TIP_TOT+KF_STRIPEIN_TIP_TOT)/4))
-input('\nHit ENTER to terminate the program.')
+input('\nHIT ENTER TO TERMINATE THE PROGRAM.')
 
