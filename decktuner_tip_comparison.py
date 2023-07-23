@@ -50,7 +50,7 @@ TIP_TOT = 0
 print ('\n')
 for t in tips:
     #print each tip and add them to counters
-    print("{:.2f}$ tip costs: {:.2f}$ BMAC, {:.2f}$ Ko-Fi (Stripe), and {:.2f}$ Ko-Fi (Paypal) ".format(t.amount, t.BMAC_FEE, t.KF_STRIPE_FEE, t.KF_PAYPAL_FEE))
+    print('{:.2f}$ tip costs: {:.2f}$ BMAC, {:.2f}$ Ko-Fi (Stripe), and {:.2f}$ Ko-Fi (Paypal) '.format(t.amount, t.BMAC_FEE, t.KF_STRIPE_FEE, t.KF_PAYPAL_FEE))
     KF_STRIPEIN_FEE_TOT = KF_STRIPEIN_FEE_TOT + t.KF_STRIPEIN_FEE
     KF_STRIPEIN_TIP_TOT = KF_STRIPEIN_TIP_TOT + t.KF_STRIPEIN_TIP
     KF_PAYPALIN_FEE_TOT = KF_PAYPALIN_FEE_TOT + t.KF_PAYPALIN_FEE
